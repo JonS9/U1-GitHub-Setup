@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -11,7 +13,7 @@ public class Main {
         System.out.println("How many people would like to pay the tip? Please enter: ");
         int num = scan.nextInt();
 
-        System.out.println("Bill: $" + bill);
+        System.out.printf("Bill: $" + bill);
         System.out.println("Tip: " + tip + "%");
         System.out.println("Number of people: " + num + " people");
 
@@ -19,9 +21,18 @@ public class Main {
         double numtip = (tipamount / num);
 
         System.out.println(" ");
-        System.out.println("Tip Amount: $" + tipamount);
-        System.out.println("Amount needed to pay in total is: $" + (bill + tipamount));
-        System.out.println("Amount of Tip payed per person: $" + numtip);
-        System.out.println("Amount each person needs to pay: $" + ((bill / num) + numtip));
-            }
+
+        String sentence1 = "Tip Amount: $";
+        System.out.printf("%s%.2f%n", sentence1, tipamount);
+
+        String sentence2 = "Amount needed to pay in total is: $";
+        System.out.printf("%s%.2f%n", sentence2, tipamount + bill);
+
+        String sentence3 = "Amount of Tip payed per person: $";
+        System.out.printf("%s%.2f%n", sentence3, numtip);
+
+        String sentence4 = "Amount each person needs to pay: $";
+        System.out.printf("%s%.2f%n", sentence4, (bill/num) + numtip);
+
+    }
 }
