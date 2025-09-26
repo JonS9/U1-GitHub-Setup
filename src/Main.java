@@ -13,7 +13,8 @@ public class Main {
         System.out.println("How many people would like to pay the tip? Please enter: ");
         int num = scan.nextInt();
 
-        System.out.printf("Bill: $" + bill);
+        String sentence = "Bill: $";
+        System.out.printf("%s%.2f%n",sentence, bill);
         System.out.println("Tip: " + tip + "%");
         System.out.println("Number of people: " + num + " people");
 
