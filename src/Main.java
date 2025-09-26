@@ -26,13 +26,13 @@ public class Main {
         System.out.printf("%s%.2f%n", sentence1, tipamount);
 
         String sentence2 = "Amount needed to pay in total is: $";
-        System.out.printf("%s%.2f%n", sentence2, tipamount + bill);
+        System.out.printf("%s%.2f%n", sentence2, (tipamount + bill));
 
         String sentence3 = "Amount of Tip payed per person: $";
         System.out.printf("%s%.2f%n", sentence3, numtip);
 
         String sentence4 = "Amount each person needs to pay: $";
-        System.out.printf("%s%.2f%n", sentence4, (bill/num) + numtip);
+        System.out.printf("%s%.2f%n", sentence4, ((bill/num) + numtip));
 
     }
 }
